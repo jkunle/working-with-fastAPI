@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fastapi-fundamentals"
+version = "0.1.0"
+description = ""
+authors = ["Olakunle Jegede <olakunle.jegede@digital.cabinet-office.gov.uk>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.87.0"}
+sqlmodel = "^0.0.8"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.991"
+black = "^22.10.0"
+flake8 = "^5.0.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
